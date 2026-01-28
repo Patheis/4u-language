@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { Montserrat } from 'next/font/google';
 import About from '@/components/About';
 import Feedback from '@/components/Feedbacks';
+import CookieBanner from '@/components/CookieBanner';
 
 // Configuração da fonte para um visual premium e leve
 const montserrat = Montserrat({
@@ -29,7 +30,7 @@ export default function Home() {
       >
         {/* Seções principais do site da 4U */}
         <Hero />
-
+        <CookieBanner />
         <section className="relative z-10">
           <Services />
           <Map />

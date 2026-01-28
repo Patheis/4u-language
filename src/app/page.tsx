@@ -7,11 +7,13 @@ import Map from '@/components/Map';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { Montserrat } from 'next/font/google';
+import About from '@/components/About';
+import Feedback from '@/components/Feedbacks';
 
 // Configuração da fonte para um visual premium e leve
-const montserrat = Montserrat({ 
-  subsets: ['latin'], 
-  weight: ['300', '400', '600'] 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '600']
 });
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
     /* Aplicamos a classe da fonte aqui para que todo o site herde a delicadeza */
     <main className={`${montserrat.className} relative min-h-screen bg-white text-zinc-800`}>
       <Navbar />
-      
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -27,13 +29,14 @@ export default function Home() {
       >
         {/* Seções principais do site da 4U */}
         <Hero />
-        
+
         <section className="relative z-10">
           <Services />
           <Map />
         </section>
       </motion.div>
-
+      <About />
+      <Feedback />
       <Footer />
     </main>
   );

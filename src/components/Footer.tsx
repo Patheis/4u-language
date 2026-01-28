@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Instagram, Clock, Phone, Mail, MapPin, Facebook } from 'lucide-react';
-import logo4u from '../../public/logo-4u.jpg';
+import logo4u from '../../public/logo-4u-semfundo.png';
 
 export default function Footer() {
     return (
@@ -17,10 +17,19 @@ export default function Footer() {
                     <p className="text-zinc-400 text-[13px] font-light leading-relaxed tracking-wide">
                         4U Language School <br />
                         Sua escola de inglês em Mococa. <br />
-                        Centro preparatório autorizado para os <br />
+                        Escola com preparatório para os <br />
                         exames de Cambridge English Qualifications.
                     </p>
+                    <div className="flex gap-4">
+                        <a href="#" className="p-2 bg-zinc-900 rounded-full hover:bg-yellow-500 hover:text-zinc-950 transition-all">
+                            <Instagram size={18} />
+                        </a>
+                        <a href="#" className="p-2 bg-zinc-900 rounded-full hover:bg-yellow-500 hover:text-zinc-950 transition-all">
+                            <Facebook size={18} />
+                        </a>
+                    </div>
                 </div>
+
 
                 {/* Coluna 2: ATENDIMENTO */}
                 <div>
@@ -28,30 +37,25 @@ export default function Footer() {
                     <ul className="space-y-5 text-[13px] font-light text-zinc-300">
                         <li className="flex items-start gap-4">
                             <Clock size={16} className="text-yellow-400 mt-1" />
-                            <span>
-                                Seg a Sex: 08:00 às 20:00 <br /> 
-                                Sábado: Sob consulta
-                            </span>
+                            <div className="flex flex-col gap-1">
+                                <span className="font-bold text-zinc-100">Segunda a Sexta</span>
+                                <span>08:00 às 20:00</span>
+                            </div>
                         </li>
-                        <li>
-                            <a 
-                                href="https://www.instagram.com/4ulanguageschool" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-4 hover:text-yellow-400 transition-colors"
-                            >
-                                <Instagram size={16} className="text-yellow-400" /> @4ulanguageschool
-                            </a>
+                        <li className="flex items-start gap-4">
+                            {/* Espaço reservado para manter o alinhamento sem repetir o ícone se preferir */}
+                            <div className="w-4" />
+                            <div className="flex flex-col gap-1">
+                                <span className="font-bold text-zinc-100">Sábado</span>
+                                <span>08:00 às 12:00</span>
+                            </div>
                         </li>
-                        <li>
-                            <a 
-                                href="https://www.facebook.com/4Ulanguageschool" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-4 hover:text-yellow-400 transition-colors"
-                            >
-                                <Facebook size={16} className="text-yellow-400" /> /4Ulanguageschool
-                            </a>
+                        <li className="flex items-start gap-4 opacity-50">
+                            <div className="w-4" />
+                            <div className="flex flex-col gap-1">
+                                <span className="font-bold text-zinc-400 italic">Domingo</span>
+                                <span>Fechado</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -64,12 +68,12 @@ export default function Footer() {
                             <Phone size={16} className="text-yellow-400" /> (19) 2172-0158
                         </li>
                         <li className="flex items-center gap-4">
-                            <Mail size={16} className="text-yellow-400" /> 4u.languageschool@gmail.com
+                            <Mail size={16} className="text-yellow-400" /> 4U.LANGUAGESCHOOL@GMAIL.COM
                         </li>
                         <li className="flex items-start gap-4">
                             <MapPin size={16} className="text-yellow-400 mt-1" />
                             <span>
-                                R. Dr. Adolfo Barreto, 53, <br /> 
+                                R. Dr. Adolfo Barreto, 53, <br />
                                 Centro, Mococa-SP
                             </span>
                         </li>
@@ -83,9 +87,9 @@ export default function Footer() {
                 </p>
                 <p className="text-[9px] text-zinc-400 uppercase tracking-[0.15em] font-light">
                     Desenvolvido por{" "}
-                    <a 
-                        href="https://wa.me/551992872451?text=Olá! Vi o site da 4U e gostaria de um orçamento para um projeto." 
-                        target="_blank" 
+                    <a
+                        href="https://wa.me/551992872451?text=Olá! Vi o site da 4U e gostaria de um orçamento para um projeto."
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="font-bold text-zinc-300 hover:text-yellow-400 transition-colors underline decoration-yellow-400/30 underline-offset-4"
                     >

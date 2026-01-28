@@ -27,9 +27,10 @@ const programas = [
 export default function Services() {
     return (
         <section id="cursos" className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-6">
-                <h2 className="text-3xl md:text-4xl font-light text-zinc-800 text-center mb-16 tracking-tight">
-                    Nossos <span className="font-semibold text-yellow-500">Programas</span>
+            <div className="max-w-7xl mx-auto px-6 text-center ">
+
+                <h2 className="text-4xl md:text-5xl font-black text-zinc-950 uppercase tracking-tighter mb-4">
+                    Nossos <span className="text-yellow-500">Programas</span>
                 </h2>
 
                 <div className="grid md:grid-cols-3 gap-10">

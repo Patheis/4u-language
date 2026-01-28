@@ -7,7 +7,7 @@ const programas = [
     {
         title: 'Kids & Juniors',
         age: 'Crianças 3–9 anos',
-        image: '/kids-class.jpg', // Certifique-se de adicionar estas fotos na pasta public
+        image: '/4u-language/kids-class.jpg', // Certifique-se de adicionar estas fotos na pasta public
         features: ['Aulas presenciais ou ao vivo', 'Aprendizado através de artes e ciências', 'Desenvolvimento da autonomia'],
     },
     {

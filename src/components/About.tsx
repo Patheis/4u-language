@@ -9,7 +9,7 @@ const equipeOriginal = [
   {
     nome: 'Teacher Fernanda',
     cargo: 'Coordenadora',
-    foto: '/equipe-1.png',
+    foto: '/4u-language/equipe-1.png',
     bio: 'Especialista em exames de Cambridge com 10 anos de experiência.',
   },
   {

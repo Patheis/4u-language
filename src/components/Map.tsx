@@ -51,7 +51,7 @@ export default function MapSection() {
               <div className="relative w-[180px] h-[60px] flex items-center justify-center">
                  {/* Substitua pelo componente <Image /> quando tiver o caminho correto */}
                 <img 
-                  src="/cambridge-logo.png" 
+                  src="/4u-language/cambridge-logo.png" 
                   alt="Cambridge English" 
                   className="object-contain w-full h-full"
                 />

@@ -10,6 +10,7 @@ import { Montserrat } from 'next/font/google';
 import About from '@/components/About';
 import Feedback from '@/components/Feedbacks';
 import CookieBanner from '@/components/CookieBanner';
+import Faq from '@/components/Faq';
 
 // Configuração da fonte para um visual premium e leve
 const montserrat = Montserrat({
@@ -38,6 +39,7 @@ export default function Home() {
       </motion.div>
       <About />
       <Feedback />
+      <Faq />
       <Footer />
     </main>
   );
